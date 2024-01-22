@@ -1,0 +1,28 @@
+.quienSomos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  h3 {
+    padding-left: 2em;
+  }
+
+  .fotoQuien {
+    width: 20%;
+    padding: 2em;
+  }
+
+  .textArea {
+    width: 45%;
+    text-align: center;
+    height: 20vh;
+  }
+
+  .profile {
+    width: 80px;
+    padding-left: 2em;
+  }
+}

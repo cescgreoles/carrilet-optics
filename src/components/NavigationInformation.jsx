@@ -9,7 +9,7 @@ const NavigationInformation = () => {
   const emailAdress = "opticacarrilet@gmail.com";
   const phoneNumber = " 934212853";
   const address = "Optica Carrilet";
-  const instagramProfile = "https://www.instagram.com/tu_perfil"; // Reemplaza esto con tu perfil de Instagram
+  const instagramProfile = "https://www.instagram.com/opticacarrilet"; // Reemplaza esto con tu perfil de Instagram
 
   const openInMaps = () => {
     const formattedAddress = encodeURIComponent(address);
