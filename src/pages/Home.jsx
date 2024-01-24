@@ -2,17 +2,22 @@ import React from "react";
 import "../styles/Home.scss";
 import NavigationInformation from "../components/NavigationInformation";
 import NavigationBar from "../components/NavigationBar";
-import ImagenIn from "../components/ImagenIn";
-
-import { Carousel } from "react-bootstrap";
+import Secciones from "../components/Secciones";
+import Footer from "../components/Footer";
+import Imagen from "../components/Imagen";
+import Combination from "../components/Combination";
+import BannerPublicitario from "../components/BannerPublicitario";
 
 const Home = () => {
   return (
     <div className="container">
+      <BannerPublicitario />
       <NavigationInformation />
       <NavigationBar />
-      <ImagenIn />
-      <Carousel />
+      <Imagen />
+      <Secciones />
+      <Combination />
+      <Footer />
     </div>
   );
 };

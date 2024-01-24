@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .combo {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .combo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    border: 1px black;
+  }
+}
+.texto-centrado {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.imagen-1 {
+  padding: 1em;
+  width: 12%;
+}

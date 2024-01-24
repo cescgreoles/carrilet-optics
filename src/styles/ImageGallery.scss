@@ -1,0 +1,24 @@
+.h2-gallery {
+  margin-left: 4em;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.img-post {
+  width: 20%;
+  height: auto;
+  padding: 0.7em;
+}

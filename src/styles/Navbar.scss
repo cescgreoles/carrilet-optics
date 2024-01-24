@@ -1,12 +1,17 @@
 .ml-auto {
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   justify-content: space-around;
   padding: 0.7em;
-  width: 100%;
 }
 
 .ml-auto-item {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+}
+
+.logoUlleres {
+  width: 45px; /* Ajusta el tamaño según tus necesidades */
+  filter: hue-rotate(180deg);
 }

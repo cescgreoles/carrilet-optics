@@ -2,9 +2,9 @@ import "../src/App.scss";
 
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Productos from "./pages/Productos";
+import Especialidades from "./pages/Especialidades";
 import Servicios from "./pages/Servicios";
-import Contacto from "./pages/Contacto";
+
 import Home from "./pages/Home";
 import LaOptica from "./pages/LaOptica";
 
@@ -15,9 +15,8 @@ function App() {
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="laOptica" element={<LaOptica />} />
-          <Route path="productos" element={<Productos />} />
+          <Route path="especialidades" element={<Especialidades />} />
           <Route path="servicios" element={<Servicios />} />
-          <Route path="contacto" element={<Contacto />} />
         </Routes>
       </main>
     </div>

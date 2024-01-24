@@ -1,0 +1,14 @@
+.sameSeccion {
+  width: 80px;
+  background-color: black;
+}
+
+.seccions {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+}

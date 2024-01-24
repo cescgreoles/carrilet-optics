@@ -1,0 +1,39 @@
+/* Footer.css */
+.footer {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-section {
+  max-width: 230px;
+}
+
+.footer h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer li {
+  margin-bottom: 5px;
+}
+
+/* Apply different styles for different screen sizes */
+@media only screen and (max-width: 600px) {
+  /* For small screens, adjust padding or font size, etc. */
+}
