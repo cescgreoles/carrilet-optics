@@ -15,6 +15,7 @@ const Home = () => {
       <NavigationInformation />
       <NavigationBar />
       <Imagen />
+      <BannerPublicitario />
       <Secciones />
       <Combination />
       <Footer />

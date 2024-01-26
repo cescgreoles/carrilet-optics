@@ -11,6 +11,7 @@
   /* For desktop: */
   .combo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     background-color: white;

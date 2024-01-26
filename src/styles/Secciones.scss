@@ -1,8 +1,3 @@
-.sameSeccion {
-  width: 80px;
-  background-color: black;
-}
-
 .seccions {
   background-color: black;
   display: flex;
@@ -10,5 +5,10 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 25vh;
+  height: 17vh;
+}
+
+.sameSeccion {
+  width: 90px;
+  background-color: black;
 }

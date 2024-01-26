@@ -13,11 +13,11 @@ const Secciones = () => {
 
       <img src={gafas} alt="profile" className="sameSeccion"></img>
 
-      <img src={audifonos} alt="profile" className="sameSeccion"></img>
-
       <img src={gafas1} alt="profile" className="sameSeccion"></img>
 
       <img src={bajaVision} alt="profile" className="sameSeccion"></img>
+
+      <img src={audifonos} alt="profile" className="sameSeccion"></img>
     </div>
   );
 };

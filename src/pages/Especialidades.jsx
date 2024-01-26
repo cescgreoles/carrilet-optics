@@ -2,6 +2,7 @@ import React from "react";
 import BackButton from "../components/BackButton";
 import NavigationInformation from "../components/NavigationInformation";
 import NavigationBar from "../components/NavigationBar";
+import BajaVision from "../components/Especialidades/BajaVision";
 
 const Especialidades = () => {
   return (
@@ -9,6 +10,7 @@ const Especialidades = () => {
       <BackButton />
       <NavigationInformation />
       <NavigationBar />
+      <BajaVision />
     </div>
   );
 };

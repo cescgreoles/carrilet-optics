@@ -7,8 +7,8 @@ const QuienSomos = () => {
     <div className="quienes-somos">
       <div className="quienSomos">
         <div className="quien-somos-enter">
-          <h2>¿Quien somos?</h2>
-          <p>
+          <h2>¿Quiénes somos?</h2>
+          <p className="justify-content">
             Óptica Carrilet fue fundada en 1996 y desde entonces, nuestro equipo
             de profesionales graduados en Óptica y Optometría están dedicados al
             cuidado de la salud visual y auditiva de nuestros pacientes. Somos
