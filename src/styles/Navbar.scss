@@ -1,17 +1,49 @@
-.ml-auto {
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 0.7em;
-}
+// .ml-auto {
+//   background-color: white;
+//   display: flex;
+//   justify-content: space-around;
+//   padding: 0.7em;
+// }
 
-.ml-auto-item {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
+// .ml-auto-item {
+//   text-decoration: none;
+//   color: black;
+//   font-weight: bold;
+// }
 
 .logoUlleres {
   width: 45px; /* Ajusta el tamaño según tus necesidades */
   filter: hue-rotate(180deg);
+}
+
+/* Navbar.css */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid black;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid black;
 }

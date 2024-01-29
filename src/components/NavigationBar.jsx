@@ -8,26 +8,34 @@ const NavigationBar = () => {
 
   return (
     <Navbar expanded={expanded} className="navbar">
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link href="/" className="ml-auto-item">
-            <img
-              src={logoUlleres}
-              alt="logo-ulleres"
-              className="logoUlleres"
-            ></img>
-          </Nav.Link>
-          <Nav.Link href="laOptica" className="ml-auto-item">
-            Óptica
-          </Nav.Link>
-          <Nav.Link href="/especialidades" className="ml-auto-item">
-            Especialidades
-          </Nav.Link>
-          <Nav.Link href="/servicios" className="ml-auto-item">
-            Servicios
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+      <nav className="responsive-navbar-nav">
+        <ul>
+          <li>
+            <Nav.Link href="/" className="ml-auto-item">
+              <img
+                src={logoUlleres}
+                alt="logo-ulleres"
+                className="logoUlleres"
+              ></img>
+            </Nav.Link>
+          </li>
+          <li>
+            <Nav.Link href="laOptica" className="ml-auto-item">
+              Óptica
+            </Nav.Link>
+          </li>
+          <li>
+            <Nav.Link href="/especialidades" className="ml-auto-item">
+              Especialidades
+            </Nav.Link>
+          </li>
+          <li>
+            <Nav.Link href="/servicios" className="ml-auto-item">
+              Servicios
+            </Nav.Link>
+          </li>
+        </ul>
+      </nav>
     </Navbar>
   );
 };

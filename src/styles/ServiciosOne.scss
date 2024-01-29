@@ -1,22 +1,22 @@
 .base-div {
-  background-color: #e0e1e1;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em;
-  width: 100%;
-}
+  padding-top: 1.5em;
+  padding-bottom: 3em;
 
-.base-div-1 {
-  text-align: center;
-  padding: 2em;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f8f8f8; /* Ajusta el color de fondo según tus preferencias */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra suave */
-  width: 80%;
-  height: 1vh;
-  align-items: center;
-  justify-content: center; /* Ajusta el ancho según tus necesidades */
+  .base-div-1 {
+    text-align: center;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra suave */
+    width: 80%;
+    height: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
