@@ -12,7 +12,7 @@
 .seccions-individual {
   width: 47%;
   height: 25vh;
-  border: 2px solid black;
+  border: 1px solid black;
   box-sizing: border-box;
   margin: 0.4em;
   background-color: white;
@@ -20,10 +20,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
   font-weight: bold;
-  background-image: url("../assets/ÓPTICA\ CARRILET\ \(3\).png");
-  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen de fondo */
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-image: url("../assets/optica-carrilet-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

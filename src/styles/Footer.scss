@@ -3,7 +3,8 @@
   background-color: whitesmoke;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding-top: 0.2em;
+  padding-bottom: 1em;
   border-top: 2px solid black;
 }
 
@@ -32,9 +33,4 @@
 
 .footer li {
   margin-bottom: 5px;
-}
-
-/* Apply different styles for different screen sizes */
-@media only screen and (max-width: 600px) {
-  /* For small screens, adjust padding or font size, etc. */
 }

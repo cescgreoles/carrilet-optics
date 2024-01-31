@@ -19,10 +19,7 @@ const Secciones = () => {
         <p>GAFAS</p>
         <p>texto</p>
       </div>
-      <div className="seccions-individual">
-        {/* <img src={gafas1} alt="profile" className="sameSeccion"></img> */}
-        <p>GAFAS DE SOL</p>
-      </div>
+
       <div className="seccions-individual">
         {/* <img src={bajaVision} alt="profile" className="sameSeccion"></img> */}
         <p>BAJA VISIÓN</p>

@@ -4,24 +4,9 @@ import "../styles/Footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      {" "}
       <div className="footer-section">
-        <h3>Links</h3>
-        <ul>
-          <li>
-            <a href="/tienda">La Óptica</a>
-          </li>
-          <li>
-            <a href="/services">Especialidades</a>
-          </li>
-          <li>
-            <a href="/contact">Servicios</a>
-          </li>
-        </ul>
-      </div>
-      <div className="footer-section">
-        <h3>Nosotros</h3>
-        <p>Optica Carrilet, situada en Hospitalet de Barcelona des de 1978</p>
+        <h3>Dirección</h3>
+        <p>Av. del Carrilet, 80, 08902 L'Hospitalet de Llobregat, Barcelona</p>
       </div>
       <div className="footer-section">
         <h3>Contacto</h3>
