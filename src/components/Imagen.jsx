@@ -1,5 +1,6 @@
 import React from "react";
-import Portada from "../assets/portada4.png";
+import Portada from "../assets/portada-1.png";
+
 import "../styles/Imagen.scss";
 
 const Imagen = () => {

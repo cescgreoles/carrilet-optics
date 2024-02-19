@@ -1,42 +1,56 @@
-.img-gallery-1 {
-  margin: 20px; // Añade márgenes alrededor del contenedor
-  text-align: center; // Centra el texto horizontalmente
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px; /* Reducir el relleno para dispositivos móviles */
+}
 
-  .h2-gallery {
-    margin-bottom: 20px; // Añade espacio debajo del título
+.card-content {
+  width: calc(50% - 20px); /* Para dos cartas por fila */
+  margin-bottom: 20px; /* Espacio entre las cartas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de las cartas */
+  border-radius: 8px; /* Bordes redondeados de las cartas */
+  display: flex; /* Hacer que los elementos dentro de la carta sean flexibles */
+}
+
+.card-image {
+  width: 50%; /* Ancho de la imagen */
+  border-radius: 8px 0 0 8px; /* Bordes redondeados solo en la esquina superior izquierda y en la inferior izquierda */
+  overflow: hidden; /* Ocultar cualquier parte de la imagen que se desborde */
+}
+
+.card-image img {
+  width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  height: auto; /* Mantener la proporción de aspecto */
+  object-fit: cover; /* Cubrir el contenedor con la imagen */
+}
+
+.card-text {
+  width: 50%; /* Ancho del texto */
+  padding: 20px; /* Espaciado interno del texto */
+  display: flex; /* Hacer que los elementos dentro del texto sean flexibles */
+  flex-direction: column; /* Apilar los elementos uno encima del otro */
+  justify-content: center; /* Centrar verticalmente los elementos dentro del texto */
+}
+
+.card-title {
+  margin-top: 0; /* Eliminar el margen superior predeterminado */
+  margin-bottom: 10px; /* Espaciado inferior del título */
+}
+
+@media only screen and (max-width: 768px) {
+  .card-content {
+    width: 100%; /* Para que las cartas ocupen todo el ancho en dispositivos móviles */
+    flex-direction: column; /* Apilar los elementos en dispositivos móviles */
   }
 
-  .img-container {
-    display: flex;
-    flex-wrap: wrap; // Permite que los elementos se ajusten automáticamente a la línea siguiente si no hay espacio suficiente
-    justify-content: space-evenly; // Distribuye los elementos de manera uniforme a lo largo del eje principal
+  .card-image {
+    width: 100%; /* Ancho completo para la imagen en dispositivos móviles */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior de la imagen */
+  }
 
-    .img-post {
-      width: calc(
-        20% - 20px
-      ); // Calcula el ancho de las imágenes para ocupar la mitad del contenedor con márgenes
-      margin: 10px; // Añade márgenes entre las imágenes
-      border-radius: 0; // Elimina los bordes redondeados para que las imágenes no tengan bordes
-
-      @media screen and (max-width: 768px) {
-        width: calc(
-          100% - 20px
-        ); // Cambia el ancho de las imágenes al 100% en pantallas pequeñas
-      }
-    }
-
-    p {
-      width: calc(
-        50% - 20px
-      ); // Calcula el ancho de los textos para ocupar la mitad del contenedor con márgenes
-      margin: 10px; // Añade márgenes entre los textos
-      text-align: left; // Alinea el texto a la izquierda
-
-      @media screen and (max-width: 768px) {
-        width: calc(
-          100% - 20px
-        ); // Cambia el ancho de los textos al 100% en pantallas pequeñas
-      }
-    }
+  .card-text {
+    width: 100%; /* Ancho completo para el texto en dispositivos móviles */
+    border-radius: 0 0 8px 8px; /* Bordes redondeados en la parte inferior del texto */
   }
 }

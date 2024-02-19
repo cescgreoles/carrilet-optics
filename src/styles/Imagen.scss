@@ -1,15 +1,17 @@
-.div-imagen {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// Estilos para dispositivos móviles
+@media (max-width: 767px) {
+  .div-imagen-img {
+    content: url("../assets/logo-1.png"); // Ruta de la imagen para dispositivos móviles
+    max-width: 100%; // Ajustar el ancho máximo para que se ajuste al ancho del contenedor
+    height: auto; // Mantener la proporción de aspecto
+  }
 }
 
-.div-imagen-img {
-  max-width: 100%; // Asegura que la imagen no exceda el ancho del contenedor
-  height: auto;
-}
-
-@media only screen and (max-width: 768px) {
+// Estilos para dispositivos de escritorio
+@media (min-width: 768px) {
+  .div-imagen-img {
+    content: url("../assets/portada-1.png"); // Ruta de la imagen para dispositivos de escritorio
+    max-width: 100%; // Ajustar el ancho máximo para que se ajuste al ancho del contenedor
+    height: auto; // Mantener la proporción de aspecto
+  }
 }
