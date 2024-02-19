@@ -1,30 +1,34 @@
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .combo {
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-  }
+.combo {
+  display: flex;
+  flex-wrap: wrap; // Permitir que las imágenes se envuelvan en varias líneas
+  justify-content: center;
+  background-color: white;
+  padding: 2em;
 }
 
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
   .combo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: white;
-    text-align: center;
+    flex-wrap: nowrap; // Evitar que las imágenes se envuelvan en dispositivos de escritorio
+  }
 
-    margin-top: 2em;
+  .imagen-1 {
+    width: 13%; // Ajustar el ancho de las imágenes para mostrar todas en una sola fila en dispositivos de escritorio
+    max-width: 200px; // Limitar el ancho máximo de las imágenes
+    margin: 1em; // Añadir un margen entre las imágenes
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .imagen-1 {
+    width: 30%; // Ajustar el ancho de las imágenes para mostrar dos por línea en dispositivos móviles
+    max-width: 150px; // Limitar el ancho máximo de las imágenes en dispositivos móviles
+    margin: 1em; // Añadir un margen entre las imágenes en dispositivos móviles
+  }
+}
+
 .texto-centrado {
   background-color: black;
   text-align: center;
   color: white;
-}
-.imagen-1 {
-  padding: 1em;
-  width: 10%;
+  margin: 2em 0; // Añadir un margen arriba y abajo del texto centrado
 }

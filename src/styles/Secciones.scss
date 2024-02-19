@@ -3,14 +3,14 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-
-  padding-top: 0.6em;
-  justify-content: center;
+  justify-content: space-around;
+  padding-top: 1em;
 }
 
 .seccions-individual {
-  width: 47%;
+  width: calc(
+    50% - 1em
+  ); // Ajustar el ancho de las secciones individuales para dos por fila
   height: 25vh;
   border: 1px solid black;
   box-sizing: border-box;
@@ -20,10 +20,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: white; // Cambiar el color del texto a negro para que se vea mejor en fondos claros
   font-weight: bold;
   background-image: url("../assets/optica-carrilet-3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .seccions-individual {
+    width: calc(
+      100% - 1em
+    ); // Ajustar el ancho de las secciones individuales para una por fila en dispositivos móviles
+  }
 }

@@ -1,31 +1,23 @@
 .quienes-somos {
-  background-color: #e0e1e1;
-}
-
-.quienSomos {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  align-items: center;
-  background-color: #e2e3e5;
+  justify-content: center; // Centra horizontalmente el contenido
+  padding: 20px; // Agrega algo de espacio alrededor del contenido
 
-  .quien-somos-enter {
+  .quienSomos {
     display: flex;
     flex-direction: column;
-    padding: 6em;
-  }
+    align-items: center; // Centra verticalmente el contenido
+    max-width: 800px; // Ancho máximo del contenedor
+    margin: 0 auto; // Centra el contenedor horizontalmente
 
-  .justify-content {
-    text-align: justify;
-  }
+    .quien-somos-enter {
+      text-align: center; // Centra el texto horizontalmente
+      margin-bottom: 20px; // Agrega espacio debajo del texto
+    }
 
-  .image-portada {
-    width: 40%;
-    height: auto;
-    padding: 2em;
-    border-radius: 4em;
+    .image-portada {
+      width: 50%; // Haz que la imagen ocupe todo el ancho del contenedor
+      border-radius: 10px; // Añade bordes redondeados a la imagen
+    }
   }
 }

@@ -1,9 +1,15 @@
 .div-imagen {
   width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .div-imagen-img {
-  width: 100%;
-  display: block;
+  max-width: 100%; // Asegura que la imagen no exceda el ancho del contenedor
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
 }

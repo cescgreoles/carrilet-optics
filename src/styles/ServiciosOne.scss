@@ -1,25 +1,22 @@
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .base-div {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1.5em;
-    padding-bottom: 3em;
+.base-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Centrar horizontalmente los rectángulos
+  max-width: 800px; // Ancho máximo de los rectángulos
+  margin: 20px auto; // Márgenes arriba y abajo en dispositivos de escritorio
+}
 
-    .base-div-1 {
-      text-align: center;
-      padding: 2em;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra suave */
-      width: 80%;
-      height: 1vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.base-div-1 {
+  width: 100%; // Ocupar todo el ancho disponible
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px; // Espacio entre los rectángulos
+  text-align: center;
+
+  @media (max-width: 768px) {
+    // Estilos para dispositivos móviles
+    margin: 10px; // Márgenes más pequeños en dispositivos móviles
   }
 }

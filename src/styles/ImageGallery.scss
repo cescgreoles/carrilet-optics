@@ -1,24 +1,42 @@
-.h2-gallery {
-  margin-left: 4em;
-}
+.img-gallery-1 {
+  margin: 20px; // Añade márgenes alrededor del contenedor
+  text-align: center; // Centra el texto horizontalmente
 
-.image-gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .h2-gallery {
+    margin-bottom: 20px; // Añade espacio debajo del título
+  }
 
-.img-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2em;
-  text-align: center;
-  margin-bottom: 20px;
-}
+  .img-container {
+    display: flex;
+    flex-wrap: wrap; // Permite que los elementos se ajusten automáticamente a la línea siguiente si no hay espacio suficiente
+    justify-content: space-evenly; // Distribuye los elementos de manera uniforme a lo largo del eje principal
 
-.img-post {
-  width: 20%;
-  height: auto;
-  padding: 0.7em;
+    .img-post {
+      width: calc(
+        20% - 20px
+      ); // Calcula el ancho de las imágenes para ocupar la mitad del contenedor con márgenes
+      margin: 10px; // Añade márgenes entre las imágenes
+      border-radius: 0; // Elimina los bordes redondeados para que las imágenes no tengan bordes
+
+      @media screen and (max-width: 768px) {
+        width: calc(
+          100% - 20px
+        ); // Cambia el ancho de las imágenes al 100% en pantallas pequeñas
+      }
+    }
+
+    p {
+      width: calc(
+        50% - 20px
+      ); // Calcula el ancho de los textos para ocupar la mitad del contenedor con márgenes
+      margin: 10px; // Añade márgenes entre los textos
+      text-align: left; // Alinea el texto a la izquierda
+
+      @media screen and (max-width: 768px) {
+        width: calc(
+          100% - 20px
+        ); // Cambia el ancho de los textos al 100% en pantallas pequeñas
+      }
+    }
+  }
 }

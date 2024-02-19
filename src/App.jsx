@@ -1,10 +1,8 @@
 import "../src/App.scss";
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Especialidades from "./pages/Especialidades";
 import Servicios from "./pages/Servicios";
-
 import Home from "./pages/Home";
 import LaOptica from "./pages/LaOptica";
 

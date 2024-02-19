@@ -1,28 +1,50 @@
-/* ResponsivePage.css */
-
-.responsive-container {
+.baja-vision-container {
+  margin: 20px auto; // Márgenes arriba y abajo
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  border-radius: 1px;
-  border-bottom: 2px;
-}
+  justify-content: center;
+  gap: 20px; // Espacio entre las secciones
 
-.section {
-  width: 30%; /* Ajusta el ancho según tus necesidades */
-  margin: 10px;
-}
+  .section {
+    margin: 10px 0; // Márgenes arriba y abajo para cada sección
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; // Espacio entre la imagen y el contenido
+    max-width: 800px; // Ancho máximo del contenido
 
-.image {
-  max-width: 100%;
-  height: auto;
-}
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 
-.text {
-  text-align: center;
-}
+    .content {
+      flex: 1;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: justify;
 
-.section-vision {
-  padding: 3em;
-  text-align: center;
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p.text {
+        margin-bottom: 0;
+      }
+    }
+
+    .image-container {
+      flex: 1;
+      max-width: 300px; // Ancho máximo de la imagen
+      overflow: hidden; // Para que la imagen no se salga del contenedor
+      border: 1px solid #ccc;
+      border-radius: 10px;
+
+      img.image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
 }
