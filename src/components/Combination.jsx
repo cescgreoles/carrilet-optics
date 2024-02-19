@@ -10,13 +10,16 @@ import police from "../assets/police.png";
 
 const Combination = () => {
   return (
-    <div className="combo">
-      <img src={logoPrada} alt="imagen1" className="imagen-1"></img>
-      <img src={EA} alt="imagen1" className="imagen-1"></img>
-      <img src={CH} alt="imagen1" className="imagen-1"></img>
-      <img src={logoTous} alt="imagen1" className="imagen-1"></img>
-      <img src={logoRayBan} alt="imagen1" className="imagen-1"></img>
-      <img src={police} alt="imagen1" className="imagen-1"></img>
+    <div>
+      <h3>Algunas de nuestras marcas</h3>
+      <div className="combo">
+        <img src={logoPrada} alt="imagen1" className="imagen-1"></img>
+        <img src={EA} alt="imagen1" className="imagen-1"></img>
+        <img src={CH} alt="imagen1" className="imagen-1"></img>
+        <img src={logoTous} alt="imagen1" className="imagen-1"></img>
+        <img src={logoRayBan} alt="imagen1" className="imagen-1"></img>
+        <img src={police} alt="imagen1" className="imagen-1"></img>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@
   flex-wrap: wrap; // Permitir que las imágenes se envuelvan en varias líneas
   justify-content: center;
   background-color: white;
-  padding: 2em;
+  padding: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -31,4 +31,8 @@
   text-align: center;
   color: white;
   margin: 2em 0; // Añadir un margen arriba y abajo del texto centrado
+}
+
+h3 {
+  text-align: center;
 }

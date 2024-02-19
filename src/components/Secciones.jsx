@@ -6,12 +6,12 @@ const Secciones = () => {
     <div className="seccions">
       <div className="seccions-individual">
         {/* <img src={lentillas} alt="profile" className="sameSeccion"></img> */}
-        <p>LENTILLAS</p>
+        <p>GAFAS</p>
         <p>texto</p>
       </div>
       <div className="seccions-individual">
         {/* <img src={gafas} alt="profile" className="sameSeccion"></img> */}
-        <p>GAFAS</p>
+        <p>LENTILLAS</p>
         <p>texto</p>
       </div>
 

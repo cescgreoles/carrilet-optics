@@ -7,7 +7,6 @@ import ServiciosOne from "../components/ServiciosOne";
 const Servicios = () => {
   return (
     <div>
-      <BackButton />
       <NavigationInformation />
       <NavigationBar />
       <ServiciosOne />

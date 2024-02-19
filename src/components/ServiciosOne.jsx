@@ -5,49 +5,30 @@ const ServiciosOne = () => {
   return (
     <div className="base-div">
       <div className="base-div-1">
-        <p>EXAMEN OPTOMÉTRICO INFANTIL (0-6 AÑOS) GRATUITO</p>
-      </div>
-      <div className="base-div-1">
         <p>EXAMEN OPTOMÉTRICO GRATUITO</p>
       </div>
       <div className="base-div-1">
-        <p>EXAMEN VISIÓN BINOCULAR</p>
+        <p>AUDIOMETRÍA GRATUITA</p>
       </div>
       <div className="base-div-1">
-        <p>EXAMEN PROCESAMIENTO VISUAL</p>
+        <p>ADATPACIÓN DE AUDÍFONOS</p>
       </div>
       <div className="base-div-1">
-        <p>MEDIDA DE LA TENSIÓN INTRAOCULAR</p>
+        <p>ESPECIALISTAS EN BAJA VISIÓN (AYUDAS VISUALES)</p>
       </div>
       <div className="base-div-1">
-        <p>DIAGNÓSTICO DE LA FUNCIÓN VISUAL</p>
-      </div>
-      <div className="base-div-1">
-        <p>TERAPIA VISUAL</p>
-      </div>
-      <div className="base-div-1">
-        <p>EVALUACIÓN RENDIMIENTO LECTOR</p>
-      </div>
-      <div className="base-div-1">
-        <p>PRESCRIPCIÓN DE AYUDAS VISUALES</p>
-      </div>
-      <div className="base-div-1">
-        <p>ADAPTACIÓN DE AYUDAS VISUALES</p>
-      </div>
-      <div className="base-div-1">
-        <p>REHABILITACIÓN VISUAL</p>
-      </div>
-      <div className="base-div-1">
-        <p>ADAPTACIÓN LENTES DE CONTACTO</p>
+        <p>
+          ADAPTACIÓN LENTES DE CONTACTO ESPECIALES
+          <p className="base-div-2">
+            (QUERATOCONO Y ASTIGMATISMOS IRREGULARES)
+          </p>
+        </p>
       </div>
       <div className="base-div-1">
         <p>MONTAJE Y TALLADO DE LENTES</p>
       </div>
       <div className="base-div-1">
-        <p>AUDIOMETRÍA</p>
-      </div>
-      <div className="base-div-1">
-        <p>ADATPACIÓN DE AUDÍFONOS</p>
+        <p>MEDIDA DE LA TENSIÓN INTRAOCULAR</p>
       </div>
     </div>
   );

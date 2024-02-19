@@ -22,17 +22,8 @@ const BajaVision = () => {
       </div>
       <div className="section">
         <div className="image-container">
-          <img src={Tabla} alt="Ejemplo" className="image" />
+          <img src={BajaVisionLupa} alt="Ejemplo" className="image" />
         </div>
-        <div className="content">
-          <h2>Glaucoma (Toma de la tensión ocular)</h2>
-          <p className="text">
-            Examen a partir de registros de la tensión ocular mediante el cual
-            prevenimos y detectamos de manera precoz el glaucoma.
-          </p>
-        </div>
-      </div>
-      <div className="section">
         <div className="content">
           <h2>Diagnóstico y tratamiento del déficit visual</h2>
           <p className="text">
@@ -45,14 +36,32 @@ const BajaVision = () => {
             para mejorar al máximo su pérdida visual.
           </p>
         </div>
+      </div>
+      <div className="section">
+        <div className="content">
+          <h2>Glaucoma(Toma de la tensión ocular)</h2>
+          <p className="text">
+            Examen a partir de registros de la tensión ocular mediante el cual
+            prevenimos y detectamos de manera precoz el glaucoma.
+          </p>
+        </div>
         <div className="image-container">
           <img src={BajaVisionLupa} alt="Ejemplo" className="image" />
         </div>
       </div>
       <div className="section">
         <div className="image-container">
-          <img src={Tabla} alt="Ejemplo" className="image" />
+          <img src={BajaVisionLupa} alt="Ejemplo" className="image" />
         </div>
+        <div className="content">
+          <h2>Cataratas</h2>
+          <p className="text">
+            Examen a partir de registros de la tensión ocular mediante el cual
+            prevenimos y detectamos de manera precoz el glaucoma.
+          </p>
+        </div>
+      </div>
+      <div className="section">
         <div className="content">
           <h2>Adaptación de gafas y lentes de contacto</h2>
           <p className="text">
@@ -65,6 +74,18 @@ const BajaVision = () => {
             y adaptaciones según sea necesario; así como en el seguimiento
             posterior.
           </p>
+        </div>
+        <div className="image-container">
+          <img src={BajaVisionLupa} alt="Ejemplo" className="image" />
+        </div>
+      </div>
+      <div className="section">
+        <div className="image-container">
+          <img src={BajaVisionLupa} alt="Ejemplo" className="image" />
+        </div>
+        <div className="content">
+          <h2>Lentes especiales para Queratocono y astigmatismo irregular</h2>
+          <p className="text">descrip.</p>
         </div>
       </div>
       <div className="section">
@@ -82,7 +103,7 @@ const BajaVision = () => {
       </div>
       <div className="section">
         <div className="image-container">
-          <img src={Tabla} alt="Ejemplo" className="image" />
+          <img src={BajaVisionLupa} alt="Ejemplo" className="image" />
         </div>
         <div className="content">
           <h2>Audioprótesis</h2>
