@@ -1,15 +1,31 @@
+.image-gallery-title {
+  background-color: #13384f;
+}
+
+.image-gallery-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  color: white;
+}
+
+h2 {
+  padding: 20px;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px; /* Reducir el relleno para dispositivos móviles */
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .card-content {
   width: calc(50% - 20px); /* Para dos cartas por fila */
   margin-bottom: 20px; /* Espacio entre las cartas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de las cartas */
-  border-radius: 8px; /* Bordes redondeados de las cartas */
+  border-radius: 1.5px; /* Bordes redondeados de las cartas */
   display: flex; /* Hacer que los elementos dentro de la carta sean flexibles */
 }
 
