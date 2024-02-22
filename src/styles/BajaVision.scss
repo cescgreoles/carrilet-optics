@@ -3,15 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; // Espacio entre las secciones
+  gap: 20px;
 
   .section {
-    margin: 10px 0; // Márgenes arriba y abajo para cada sección
+    margin: 15px 0; // Márgenes arriba y abajo para cada sección
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px; // Espacio entre la imagen y el contenido
     max-width: 800px; // Ancho máximo del contenido
+    border-bottom: 1.5px solid black;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -20,8 +21,6 @@
     .content {
       flex: 1;
       padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
       text-align: justify;
 
       h2 {
@@ -37,8 +36,6 @@
       flex: 1;
       max-width: 300px; // Ancho máximo de la imagen
       overflow: hidden; // Para que la imagen no se salga del contenedor
-      border: 1px solid #ccc;
-      border-radius: 10px;
 
       img.image {
         width: 100%;

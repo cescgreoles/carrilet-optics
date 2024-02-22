@@ -29,3 +29,108 @@ nav ul li a {
 nav ul li a.active {
   border-bottom: 2px solid black;
 }
+
+.especial-button {
+  text-decoration: none;
+  color: white;
+}
+
+.button-menu {
+  background-color: #13384f;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  font-size: 14px; // Tamaño de fuente del botón
+  border-radius: 5px; // Bordes redondeados del botón
+  cursor: pointer; // Cambiar cursor al pasar sobre el botón
+  transition: background-color 0.3s ease; // Transición suave al cambiar el color de fondo
+  width: 10%;
+  margin: 0.7em;
+}
+
+.button-none-mobile {
+  display: none;
+}
+
+.btn-consulta {
+  background-color: #13384f;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  font-size: 14px; // Tamaño de fuente del botón
+  border-radius: 5px; // Bordes redondeados del botón
+  cursor: pointer; // Cambiar cursor al pasar sobre el botón
+  transition: background-color 0.3s ease; // Transición suave al cambiar el color de fondo
+  width: 10%;
+  margin: 0.7em;
+}
+
+// Estilos para el botón de consulta
+.btn-consulta {
+  &:hover {
+    background-color: #13384f; // Cambiar color de fondo al pasar sobre el botón
+  }
+
+  &:focus {
+    outline: none; // Quitar el contorno al hacer foco en el botón
+  }
+}
+
+// Media query para dispositivos móviles (ancho máximo de 767px)
+@media only screen and (max-width: 767px) {
+  // Estilos para dispositivos móviles
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5fafb;
+  }
+
+  .button-menu {
+    background-color: #13384f;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    font-size: 16px; // Tamaño de fuente del botón
+    border-radius: 5px; // Bordes redondeados del botón
+    cursor: pointer; // Cambiar cursor al pasar sobre el botón
+    transition: background-color 0.3s ease; // Transición suave al cambiar el color de fondo
+    width: 30%;
+    margin: 0.7em;
+  }
+
+  .button-none-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-consulta {
+    background-color: #13384f;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    font-size: 16px; // Tamaño de fuente del botón
+    border-radius: 5px; // Bordes redondeados del botón
+    cursor: pointer; // Cambiar cursor al pasar sobre el botón
+    transition: background-color 0.3s ease; // Transición suave al cambiar el color de fondo
+    width: 30%;
+    margin: 0.7em;
+  }
+
+  .btn-consulta {
+    &:hover {
+      background-color: #13384f; // Cambiar color de fondo al pasar sobre el botón
+    }
+
+    &:focus {
+      outline: none; // Quitar el contorno al hacer foco en el botón
+    }
+  }
+  // Agrega tus estilos para dispositivos móviles aquí
+}

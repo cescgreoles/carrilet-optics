@@ -25,9 +25,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  // Aplicar filtro de color azul
-  filter: brightness(120%) saturate(120%) hue-rotate(205deg); // Ajusta los valores según el tono de azul deseado
+  filter: brightness(150%) saturate(150%) hue-rotate(220deg);
 }
 
 @media only screen and (max-width: 768px) {

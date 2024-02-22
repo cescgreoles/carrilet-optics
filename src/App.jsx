@@ -5,6 +5,7 @@ import Especialidades from "./pages/Especialidades";
 import Servicios from "./pages/Servicios";
 import Home from "./pages/Home";
 import LaOptica from "./pages/LaOptica";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="laOptica" element={<LaOptica />} />
           <Route path="especialidades" element={<Especialidades />} />
           <Route path="servicios" element={<Servicios />} />
+          <Route path="contactForm" element={<ContactForm />} />
         </Routes>
       </main>
     </div>
