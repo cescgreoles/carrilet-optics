@@ -8,30 +8,75 @@
 }
 
 .seccions-individual {
-  width: calc(
-    50% - 1em
-  ); // Ajustar el ancho de las secciones individuales para dos por fila
+  position: relative;
+  width: calc(50% - 1em);
   height: 25vh;
   border: 1px solid black;
   box-sizing: border-box;
   margin: 0.4em;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; // Cambiar el color del texto a blanco para que se vea mejor en fondos oscuros
+  color: #13384f;
   font-weight: bold;
-  background-image: url("../assets/optica-carrilet-3.png");
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); // Sombra de texto para destacarlo
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(150%) saturate(150%) hue-rotate(220deg);
+  transition: filter 0.3s ease; // Transición suave del filtro
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: none; // Eliminar filtro al hacer hover
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease; // Transición suave del filtro
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: calc(100% - 1em);
+  }
 }
 
-@media only screen and (max-width: 768px) {
-  .seccions-individual {
-    width: calc(
-      100% - 1em
-    ); // Ajustar el ancho de las secciones individuales para una por fila en dispositivos móviles
-  }
+.seccions-individual:nth-child(1) {
+  background-image: url("../assets/glasses1.png");
+}
+
+.seccions-individual:nth-child(2) {
+  background-image: url("../assets/lentillas.webp");
+}
+
+.seccions-individual:nth-child(3) {
+  background-image: url("../assets/bajavision.webp");
+}
+
+.seccions-individual:nth-child(4) {
+  background-image: url("../assets/audifonos.jpeg");
+}
+
+// Contenido principal
+.seccions-individual-content {
+  position: relative;
+  z-index: 1; // Asegurar que el contenido principal esté encima de la imagen de fondo
 }

@@ -5,25 +5,28 @@ const Secciones = () => {
   return (
     <div className="seccions">
       <div className="seccions-individual">
-        {/* <img src={lentillas} alt="profile" className="sameSeccion"></img> */}
-        <p>GAFAS</p>
-        <p>texto</p>
+        <div className="seccions-individual-content">
+          <p>GAFAS</p>
+          <p>Texto de ejemplo para gafas.</p>
+        </div>
       </div>
       <div className="seccions-individual">
-        {/* <img src={gafas} alt="profile" className="sameSeccion"></img> */}
-        <p>LENTILLAS</p>
-        <p>texto</p>
-      </div>
-
-      <div className="seccions-individual">
-        {/* <img src={bajaVision} alt="profile" className="sameSeccion"></img> */}
-        <p>BAJA VISIÓN</p>
-        <p>texto</p>
+        <div className="seccions-individual-content">
+          <p>LENTILLAS</p>
+          <p>Texto de ejemplo para lentillas.</p>
+        </div>
       </div>
       <div className="seccions-individual">
-        {/* <img src={audifonos} alt="profile" className="sameSeccion"></img> */}
-        <p>AUDIFONOS</p>
-        <p>texto</p>
+        <div className="seccions-individual-content">
+          <p>BAJA VISIÓN</p>
+          <p>Texto de ejemplo para baja visión.</p>
+        </div>
+      </div>
+      <div className="seccions-individual">
+        <div className="seccions-individual-content">
+          <p>AUDÍFONOS</p>
+          <p>Texto de ejemplo para audífonos.</p>
+        </div>
       </div>
     </div>
   );

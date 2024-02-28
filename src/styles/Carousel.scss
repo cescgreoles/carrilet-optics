@@ -1,0 +1,81 @@
+// Carousel.scss
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  .carousel-slider {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s ease; // Transición suave al cambiar de slide
+  }
+
+  .slide {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0; // Color de fondo predeterminado
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  // Flechas de navegación
+  .control-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5); // Color de fondo de las flechas
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease; // Transición suave del color de fondo
+    z-index: 2;
+
+    &:hover {
+      background: rgba(
+        255,
+        255,
+        255,
+        0.8
+      ); // Color de fondo de las flechas al pasar el mouse
+    }
+
+    &.control-next {
+      right: 10px; // Posición de la flecha de siguiente
+    }
+
+    &.control-prev {
+      left: 10px; // Posición de la flecha de anterior
+    }
+  }
+
+  // Puntos de navegación
+  .thumbs-wrapper {
+    display: none; // Ocultar los puntos de navegación
+  }
+
+  // Estilos para los puntos activos
+  .dot {
+    background-color: #007bff; // Color del punto inactivo
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease; // Transición suave del color de fondo
+
+    &.selected {
+      background-color: #0056b3; // Color del punto activo
+    }
+  }
+}

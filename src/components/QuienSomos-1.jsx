@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/QuienSomos-1.scss";
-import Post1 from "../assets/qs-portada.jpeg";
 
 const QuienSomos = () => {
   return (

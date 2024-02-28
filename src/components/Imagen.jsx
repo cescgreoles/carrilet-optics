@@ -1,5 +1,5 @@
 import React from "react";
-import Portada from "../assets/portada-1.png";
+import Portada from "../assets/logo-1.png";
 
 import "../styles/Imagen.scss";
 

@@ -1,3 +1,8 @@
+$base-color: #13384f;
+
+$soft-blue-3: lighten($base-color, 60%); // 60% más claro
+$soft-blue-2: lighten($base-color, 20%); // 60% más claro
+
 .base-div {
   display: flex;
   flex-direction: column;
@@ -8,8 +13,8 @@
 
 .base-div-1 {
   width: 80%; // Ocupar todo el ancho disponible
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
+  background-color: $soft-blue-3;
+  border: 1px solid $soft-blue-2;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px; // Espacio entre los rectángulos
