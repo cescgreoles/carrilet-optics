@@ -5,10 +5,9 @@ import Post2 from "../assets/silla.jpeg";
 const ImageGallery = () => {
   return (
     <div className="image-gallery-container">
-      <div className="image-gallery-title">
+      <div>
         <h2 className="image-gallery-title">Nuestros Especialistas</h2>
       </div>
-
       <div className="card">
         <div className="card-content">
           <div className="card-image">

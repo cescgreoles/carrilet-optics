@@ -6,8 +6,6 @@ import Secciones from "../components/Secciones";
 import Footer from "../components/Footer";
 import Imagen from "../components/Imagen";
 import Combination from "../components/Combination";
-import { Carousel } from "react-bootstrap";
-// import BannerPublicitario from "../components/BannerPublicitario";
 
 const Home = () => {
   return (
@@ -15,7 +13,6 @@ const Home = () => {
       <NavigationInformation />
       <NavigationBar />
       <Imagen />
-      <Carousel />
       <Secciones />
       <Combination />
       <Footer />

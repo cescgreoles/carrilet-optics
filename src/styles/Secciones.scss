@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   color: #13384f;
-  font-weight: bold;
+  font-weight: bolder;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); // Sombra de texto para destacarlo
   background-size: cover;
   background-position: center;
@@ -60,15 +60,15 @@
 }
 
 .seccions-individual:nth-child(1) {
-  background-image: url("../assets/glasses1.png");
+  background-image: url("../assets/gafas.jpeg");
 }
 
 .seccions-individual:nth-child(2) {
-  background-image: url("../assets/lentillas.webp");
+  background-image: url("../assets/lentillas.jpeg");
 }
 
 .seccions-individual:nth-child(3) {
-  background-image: url("../assets/bajavision.webp");
+  background-image: url("../assets/bajaVision.jpeg");
 }
 
 .seccions-individual:nth-child(4) {

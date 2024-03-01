@@ -1,81 +1,86 @@
-// Carousel.scss
+$base-color: #13384f;
+
+$soft-blue-3: lighten($base-color, 60%); // 60% más claro
+$soft-blue-2: lighten($base-color, 10%); // 60% más claro
+
+.carousel-optic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  padding: 20px;
+  border-top: 1px solid $soft-blue-2;
+}
+
+.carousel-optic-1 {
+  text-align: center;
+  opacity: 0.9;
+  color: #13384f;
+  margin: 0;
+  padding: 6px; /* Añadir padding para mayor espacio */
+  width: 100%;
+}
 
 .carousel {
   position: relative;
-  overflow: hidden;
-  width: 100%;
+  max-width: 800px; /* Ancho máximo del carrusel */
+  margin: 0 auto; /* Centra horizontalmente el carrusel */
+  overflow: hidden; /* Oculta las imágenes adicionales */
 
-  .carousel-slider {
-    position: relative;
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    transition: transform 0.5s ease; // Transición suave al cambiar de slide
-  }
-
-  .slide {
-    display: block;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-color: #f0f0f0; // Color de fondo predeterminado
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  // Flechas de navegación
-  .control-arrow {
+  button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.5); // Color de fondo de las flechas
-    border-radius: 50%;
+    background: transparent;
+    border: none;
     cursor: pointer;
-    transition: background 0.3s ease; // Transición suave del color de fondo
+    font-size: 1.5rem; /* Tamaño del texto de los botones */
+    color: #333; /* Color del texto de los botones */
     z-index: 2;
-
-    &:hover {
-      background: rgba(
-        255,
-        255,
-        255,
-        0.8
-      ); // Color de fondo de las flechas al pasar el mouse
-    }
-
-    &.control-next {
-      right: 10px; // Posición de la flecha de siguiente
-    }
-
-    &.control-prev {
-      left: 10px; // Posición de la flecha de anterior
-    }
   }
 
-  // Puntos de navegación
-  .thumbs-wrapper {
-    display: none; // Ocultar los puntos de navegación
+  button.prev {
+    left: 10px; /* Ajusta la posición del botón "Prev" */
   }
 
-  // Estilos para los puntos activos
-  .dot {
-    background-color: #007bff; // Color del punto inactivo
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: background-color 0.3s ease; // Transición suave del color de fondo
+  button.next {
+    right: 10px; /* Ajusta la posición del botón "Next" */
+  }
 
-    &.selected {
-      background-color: #0056b3; // Color del punto activo
-    }
+  img {
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+    max-width: calc(100% / 3); /* Ancho máximo de cada imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-height: 1100px; /* Altura máxima de las imágenes */
+    object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la relación de aspecto */
+    transition: transform 0.3s ease; /* Transición suave al cambiar de imagen */
+    padding: 20px;
+  }
+
+  img:nth-child(1) {
+    transform: translateX(-100%);
+  }
+
+  img:nth-child(2) {
+    transform: translateX(0);
+  }
+
+  img:nth-child(3) {
+    transform: translateX(100%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel img {
+    display: block;
+    margin: 0 auto;
+    max-width: 60.333333%;
+    height: auto;
+    max-height: 1100px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    padding: 20px;
   }
 }
