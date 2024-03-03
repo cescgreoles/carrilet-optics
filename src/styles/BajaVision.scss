@@ -1,116 +1,61 @@
-// Variables
-$primary-color: #13384f;
-$secondary-color: black;
-$font-family: "Arial", sans-serif;
-$base-color: #13384f;
-
-// Tonalidades suaves
-$soft-blue-1: lighten($base-color, 70%); // 20% más claro
-$soft-blue-3: lighten($base-color, 60%); // 40% más claro
-$soft-blue-2: lighten($base-color, 65%); // 60% más claro
-
-// Mixin para centrar elementos horizontal y verticalmente
-@mixin center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-// Estilos globales
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: $font-family;
-  text-align: justify;
-}
-
-// Contenedor principal
-.baja-vision-container {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  // Centrar contenido
-  @include center;
-}
-
-// Estilos de sección
 .section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* Color de fondo blanco */
+  text-align: justify;
+  align-items: stretch;
+}
+
+.content {
+  display: flex;
   width: 100%;
-  height: 280px;
-  border-bottom: solid 0.7px black;
-  align-items: center;
-
-  // Contenido
-  .content {
-    width: 70%;
-    padding-bottom: 5px;
-
-    h2 {
-      color: $primary-color;
-      font-size: 24px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-  }
-
-  // Estilos para texto
-  .text {
-    color: $secondary-color;
-  }
+  padding: 20px; /* Añade espaciado interno */
 }
 
-// Estilos para sección 1
-.section-1 {
-  background-color: $soft-blue-1;
+.text-wrapper {
+  width: 75%;
+  padding-right: 20px; /* Agrega espacio a la derecha del texto */
+  text-align: justify; /* Justifica el texto */
 }
 
-// Estilos para sección 2
-.section-2 {
-  background-color: $soft-blue-2;
+.image-wrapper {
+  width: 25%;
+  text-align: center;
+  position: relative; /* Añade posición relativa para el contenedor */
+  overflow: hidden; /* Oculta el contenido que exceda el tamaño del contenedor */
 }
 
-// Estilos para sección 3
-.section-3 {
-  background-color: $soft-blue-3;
+.section-image {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% */
+  height: auto;
+  position: absolute; /* Ajusta la posición absoluta para llenar el contenedor */
+  top: 0; /* Alinea la imagen arriba */
+  left: 0; /* Alinea la imagen a la izquierda */
 }
 
-// Estilos para sección 4
-.section-4 {
-  background-color: $soft-blue-1; // Cambia el color según sea necesario
-}
-
-// Estilos para sección 5
-.section-5 {
-  background-color: $soft-blue-2; // Cambia el color según sea necesario
-}
-
-// Estilos para sección 6
-.section-6 {
-  background-color: $soft-blue-3; // Cambia el color según sea necesario
-}
-
-.section-7 {
-  background-color: $soft-blue-1; // Cambia el color según sea necesario
-}
-.section-8 {
-  background-color: $soft-blue-2; // Cambia el color según sea necesario
-}
-
-// Media query para dispositivos pequeños
 @media (max-width: 768px) {
-  .section {
-    flex-direction: column;
-    height: auto;
+  /* Cambios para dispositivos móviles */
+  .content {
+    flex-direction: column; /* Cambia la dirección del contenido a columna */
+    align-items: center; /* Centra los elementos en el eje Y */
+  }
+
+  .text-wrapper {
+    width: 100%;
+    text-align: center; /* Centra el texto */
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: 0; /* Establece la altura en 0 para que se ajuste automáticamente */
+    padding-top: 100%; /* Establece el padding superior para crear un contenedor cuadrado */
+  }
+
+  .section-image {
+    position: absolute; /* Ajusta la posición absoluta para llenar el contenedor */
+    width: 100%; /* Ajusta el ancho de la imagen al 100% */
+    height: 100%; /* Ajusta la altura de la imagen al 100% */
+    top: 0; /* Alinea la imagen arriba */
+    left: 0; /* Alinea la imagen a la izquierda */
   }
 }

@@ -1,0 +1,77 @@
+.container-modals {
+  display: flex;
+  flex-direction: column; /* Alinear los botones verticalmente */
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuir los botones horizontalmente */
+}
+
+.button-1,
+.button-2,
+.button-3,
+.button-4 {
+  width: 48%; /* Ancho de cada botón para mostrar dos por fila en dispositivos de escritorio */
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 5px;
+}
+
+.button-1:hover,
+.button-2:hover,
+.button-3:hover,
+.button-4:hover {
+  transform: translateY(-5px);
+}
+
+.button-1 {
+  background-image: url("../assets/1.png");
+}
+
+.button-2 {
+  background-image: url("../assets/2.png");
+}
+
+.button-3 {
+  background-image: url("../assets/3.png");
+}
+
+.button-4 {
+  background-image: url("../assets/4.png");
+}
+
+.parent-modal-title {
+  color: white;
+}
+
+.parent-modal-description {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .button-1,
+  .button-2,
+  .button-3,
+  .button-4 {
+    width: 100%; /* Ancho completo para mostrar un botón por fila en dispositivos móviles */
+    margin-bottom: 10px; /* Agregar margen inferior a cada botón en dispositivos móviles */
+  }
+
+  .MuiPaper-root {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .parent-modal-title,
+  .parent-modal-description {
+    margin: 0 10px;
+  }
+}

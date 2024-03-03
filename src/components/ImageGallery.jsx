@@ -27,24 +27,6 @@ const ImageGallery = () => {
             <p>Descripción de la Carta 1</p>
           </div>
         </div>
-        <div className="card-content">
-          <div className="card-image">
-            <img src={Post2} alt="Card" />
-          </div>
-          <div className="card-text">
-            <h3 className="card-title">Título de la Carta 1</h3>
-            <p>Descripción de la Carta 1</p>
-          </div>
-        </div>
-        <div className="card-content">
-          <div className="card-image">
-            <img src={Post2} alt="Card" />
-          </div>
-          <div className="card-text">
-            <h3 className="card-title">Título de la Carta 1</h3>
-            <p>Descripción de la Carta 1</p>
-          </div>
-        </div>
       </div>
     </div>
   );

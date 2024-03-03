@@ -5,10 +5,8 @@ $soft-blue-3: lighten($base-color, 10%);
 .image-gallery-container {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid $soft-blue-3;
   justify-content: center;
   align-items: center;
-  height: 650px;
 }
 
 .image-gallery-title {

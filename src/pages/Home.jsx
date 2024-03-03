@@ -2,10 +2,10 @@ import React from "react";
 import "../styles/Home.scss";
 import NavigationInformation from "../components/NavigationInformation";
 import NavigationBar from "../components/NavigationBar";
-import Secciones from "../components/Secciones";
 import Footer from "../components/Footer";
 import Imagen from "../components/Imagen";
 import Combination from "../components/Combination";
+import NestedModal from "../components/SeccionModal";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <NavigationInformation />
       <NavigationBar />
       <Imagen />
-      <Secciones />
+      <NestedModal />
       <Combination />
       <Footer />
     </div>

@@ -24,7 +24,24 @@ const Carousel = ({ images }) => {
           &#10094;
         </button>
 
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+        <img
+          src={
+            images[currentIndex === 0 ? images.length - 1 : currentIndex - 1]
+          }
+          alt={`Slide ${currentIndex === 0 ? images.length : currentIndex}`}
+          className="prev-slide"
+        />
+        <img
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+          className="current-slide"
+        />
+        <img
+          src={images[(currentIndex + 1) % images.length]}
+          alt={`Slide ${((currentIndex + 1) % images.length) + 1}`}
+          className="next-slide"
+        />
+
         <button className="next" onClick={nextSlide}>
           &#10095;
         </button>
