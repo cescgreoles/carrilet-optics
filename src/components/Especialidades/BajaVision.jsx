@@ -9,6 +9,7 @@ const SectionWithImage = ({
   expanded,
   handleExpand,
   imageSrc,
+  textAdicional,
 }) => {
   return (
     <div className={`section ${sectionClass}`}>
@@ -16,9 +17,12 @@ const SectionWithImage = ({
         <div className="text-wrapper">
           <h2>{title}</h2>
           <p className="text">{text}</p>
-          {expanded && <p className="expanded-text">Texto adicional...</p>}
-          <button onClick={() => handleExpand(sectionClass)}>
-            {expanded ? "Mostrar menos" : "Mostrar más"}
+          {expanded && <p className="expanded-text">{textAdicional}</p>}
+          <button
+            className="button-mostrar-mas"
+            onClick={() => handleExpand(sectionClass)}
+          >
+            {expanded ? "Menos información" : "Más información"}
           </button>
         </div>
         <div className="image-wrapper">
@@ -55,15 +59,17 @@ const BajaVision = () => {
         expanded={expandedSections.includes("section-1")}
         handleExpand={handleExpand}
         imageSrc={glasses1}
+        textAdicional="hooola"
       />
 
       <SectionWithImage
         title="Diagnóstico y tratamiento del déficit visual"
-        text="La valoración de la pérdida de función visual es esencial para determinar el diagnóstico, pronóstico y duración del tratamiento en pacientes de cualquier grupo de edad. También proporcionamos el servicio gratuito de consulta con un médico oftalmólogo para una evaluación más completa. Nuestros especialistas del Hospital de Bellvitge se asegurarán de que usted reciba el tratamiento adecuado para mejorar al máximo su pérdida visual."
+        text="La valoración de la pérdida de función visual es esencial para determinar el diagnóstico, pronóstico y duración del tratamiento en pacientes de cualquier grupo de edad. También proporcionamos el servicio gratuito de consulta con un médico oftalmólogo para una evaluación más completa."
         sectionClass="section-2"
         expanded={expandedSections.includes("section-2")}
         handleExpand={handleExpand}
         imageSrc={glasses1}
+        textAdicional="Nuestros especialistas del Hospital de Bellvitge se asegurarán de que usted reciba el tratamiento adecuado para mejorar al máximo su pérdida visual"
       />
 
       <SectionWithImage

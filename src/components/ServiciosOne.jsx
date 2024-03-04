@@ -13,7 +13,7 @@ const ServiciosOne = () => {
       <div className="base-div-1" onClick={() => handleClick(1)}>
         <p>
           EXAMEN OPTOMÉTRICO GRATUITO{" "}
-          {openDiv === 1 ? <span>&#9660;</span> : <span>&#9654;</span>}
+          {openDiv === 1 ? <span>&#9650;</span> : <span>&#9660;</span>}
         </p>
         {openDiv === 1 && (
           <p className="base-div-2">
@@ -25,7 +25,7 @@ const ServiciosOne = () => {
       <div className="base-div-1" onClick={() => handleClick(2)}>
         <p>
           AUDIOMETRÍA GRATUITA{" "}
-          {openDiv === 2 ? <span>&#9660;</span> : <span>&#9654;</span>}
+          {openDiv === 2 ? <span>&#9650;</span> : <span>&#9660;</span>}
         </p>
         {openDiv === 2 && (
           <p className="base-div-2">
@@ -36,7 +36,7 @@ const ServiciosOne = () => {
       <div className="base-div-1" onClick={() => handleClick(3)}>
         <p>
           ADAPTACIÓN DE AUDÍFONOS{" "}
-          {openDiv === 3 ? <span>&#9660;</span> : <span>&#9654;</span>}
+          {openDiv === 3 ? <span>&#9650;</span> : <span>&#9660;</span>}
         </p>
         {openDiv === 3 && (
           <p className="base-div-2">
@@ -48,7 +48,7 @@ const ServiciosOne = () => {
       <div className="base-div-1" onClick={() => handleClick(4)}>
         <p>
           ESPECIALISTAS EN BAJA VISIÓN (AYUDAS VISUALES){" "}
-          {openDiv === 4 ? <span>&#9660;</span> : <span>&#9654;</span>}
+          {openDiv === 4 ? <span>&#9650;</span> : <span>&#9660;</span>}
         </p>
         {openDiv === 4 && (
           <p className="base-div-2">
@@ -60,7 +60,7 @@ const ServiciosOne = () => {
       <div className="base-div-1" onClick={() => handleClick(5)}>
         <p>
           ADAPTACIÓN LENTES DE CONTACTO ESPECIALES{" "}
-          {openDiv === 5 ? <span>&#9660;</span> : <span>&#9654;</span>}
+          {openDiv === 5 ? <span>&#9650;</span> : <span>&#9660;</span>}
         </p>
         {openDiv === 5 && (
           <p className="base-div-2">
@@ -73,7 +73,7 @@ const ServiciosOne = () => {
       <div className="base-div-1" onClick={() => handleClick(6)}>
         <p>
           MONTAJE Y TALLADO DE LENTES{" "}
-          {openDiv === 6 ? <span>&#9660;</span> : <span>&#9654;</span>}
+          {openDiv === 6 ? <span>&#9650;</span> : <span>&#9660;</span>}
         </p>
         {openDiv === 6 && (
           <p className="base-div-2">
@@ -85,7 +85,19 @@ const ServiciosOne = () => {
       <div className="base-div-1" onClick={() => handleClick(7)}>
         <p>
           MEDIDA DE LA TENSIÓN INTRAOCULAR{" "}
-          {openDiv === 7 ? <span>&#9660;</span> : <span>&#9654;</span>}
+          {openDiv === 7 ? <span>&#9650;</span> : <span>&#9660;</span>}
+        </p>
+        {openDiv === 7 && (
+          <p className="base-div-2">
+            Realizamos mediciones de la tensión intraocular para evaluar la
+            salud ocular.
+          </p>
+        )}
+      </div>
+      <div className="base-div-1" onClick={() => handleClick(7)}>
+        <p>
+          MEDIDA DE LA TENSIÓN INTRAOCULAR{" "}
+          {openDiv === 7 ? <span>&#9650;</span> : <span>&#9660;</span>}
         </p>
         {openDiv === 7 && (
           <p className="base-div-2">

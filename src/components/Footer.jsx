@@ -25,6 +25,15 @@ const Footer = () => {
               Instagram
             </a>
           </li>
+          <li>
+            <a
+              href="https://twitter.com/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Linkedin
+            </a>
+          </li>
         </ul>
       </div>
     </footer>

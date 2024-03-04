@@ -1,31 +1,26 @@
-$base-color: #13384f;
-
-$soft-blue-3: lighten($base-color, 70%); // 60% más claro
-$soft-blue-2: lighten($base-color, 20%); // 60% más claro
-
 .base-div {
   display: flex;
-  flex-direction: column;
-  align-items: center; // Centrar horizontalmente los rectángulos
-  max-width: 800px; // Ancho máximo de los rectángulos
-  margin: 20px auto; // Márgenes arriba y abajo en dispositivos de escritorio
-}
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
 
-.base-div-1 {
-  width: 80%; // Ocupar todo el ancho disponible
-  background-color: $soft-blue-3;
-  border: 1px solid $soft-blue-2;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px; // Espacio entre los rectángulos
-  text-align: center;
-
-  .base-div-2 {
+  .base-div-1 {
+    width: 45%;
+    background-color: #13384f;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
     font-size: 12px;
-  }
 
-  @media (max-width: 768px) {
-    // Estilos para dispositivos móviles
-    margin: 10px; // Márgenes más pequeños en dispositivos móviles
+    .base-div-2 {
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%; // Cambiar a ocupar todo el ancho disponible en dispositivos móviles
+    }
   }
 }

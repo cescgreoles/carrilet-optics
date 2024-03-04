@@ -1,7 +1,7 @@
 .quienes-somos {
   display: flex;
   justify-content: center; // Centra horizontalmente el contenido
-  padding: 60px; // Agrega algo de espacio alrededor del contenido
+  padding: 30px; // Agrega algo de espacio alrededor del contenido
   color: #13384f;
   font-weight: bold;
 
@@ -13,7 +13,7 @@
     margin: 0 auto; // Centra el contenedor horizontalmente
 
     .quien-somos-enter {
-      text-align: center; // Centra el texto horizontalmente
+      text-align: center;
       margin-bottom: 20px; // Agrega espacio debajo del texto
     }
 

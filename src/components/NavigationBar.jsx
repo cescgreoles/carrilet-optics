@@ -101,7 +101,7 @@ const NavigationBar = () => {
             <button className="btn-consulta">
               <Nav.Link
                 className="especial-button"
-                href="/contactForm"
+                href="/contactPage"
                 onMouseEnter={() => handleMouseEnter("consultas")}
                 onMouseLeave={handleMouseLeave}
               >

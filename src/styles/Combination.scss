@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap; // Permitir que las imágenes se envuelvan en varias líneas
   justify-content: center;
-  padding: 1em;
+  padding: 0px 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -34,4 +34,10 @@
 
 h3 {
   text-align: center;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.h3-cc {
+  color: #13384f;
 }

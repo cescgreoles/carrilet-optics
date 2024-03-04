@@ -1,0 +1,19 @@
+.carousel-slide {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.slick-slide {
+  img {
+    width: calc(
+      100% - 2px
+    ); // Establece el ancho máximo de las imágenes y resta el espacio entre ellas
+    height: auto; // Ajusta la altura automáticamente para mantener la proporción
+    margin-right: 2px; // Agrega un margen derecho para separar las imágenes
+  }
+
+  &:last-child img {
+    margin-right: 0; // Elimina el margen derecho para la última imagen
+  }
+}

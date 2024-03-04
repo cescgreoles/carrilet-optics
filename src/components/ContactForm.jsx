@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../styles/ContactForm.scss";
-import NavigationBar from "../components/NavigationBar";
-import NavigationInformation from "../components/NavigationInformation";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,12 +40,8 @@ const ContactForm = () => {
 
   return (
     <div>
-      <div className="contact-form-container">
-        <NavigationInformation />
-        <NavigationBar />
-      </div>
+      <div className="contact-form-container"></div>
       <div className="form-container">
-        <h3>Formulario de Contacto</h3>
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Nombre:</label>

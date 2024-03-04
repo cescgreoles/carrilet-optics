@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Imagen from "../components/Imagen";
 import Combination from "../components/Combination";
 import NestedModal from "../components/SeccionModal";
+import BannerPublicitario from "../components/BannerPublicitario";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <NestedModal />
       <Combination />
       <Footer />
+      <BannerPublicitario />
     </div>
   );
 };

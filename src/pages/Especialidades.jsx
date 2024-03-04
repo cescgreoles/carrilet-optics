@@ -1,14 +1,17 @@
 import React from "react";
+import "../styles/BajaVision.scss";
 import NavigationInformation from "../components/NavigationInformation";
 import NavigationBar from "../components/NavigationBar";
 import BajaVision from "../components/Especialidades/BajaVision";
 
 const Especialidades = () => {
   return (
-    <div className="specialists">
+    <div>
       <NavigationInformation />
       <NavigationBar />
-      <BajaVision />
+      <div className="specialists">
+        <BajaVision />
+      </div>{" "}
     </div>
   );
 };

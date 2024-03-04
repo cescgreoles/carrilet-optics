@@ -16,7 +16,6 @@ const QuienSomos = () => {
             geografia española.
           </p>
         </div>
-        {/* <img src={Post1} alt="imagen" className="image-portada"></img> */}
       </div>
     </div>
   );

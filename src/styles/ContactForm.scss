@@ -27,6 +27,8 @@ h3 {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #13384f;
+  color: #fff;
 
   h2 {
     margin-bottom: 20px;
@@ -38,7 +40,7 @@ h3 {
     label {
       display: block;
       margin-bottom: 8px;
-      font-weight: bold;
+      font-size: 14px;
     }
 
     input[type="text"],
@@ -56,11 +58,12 @@ h3 {
   }
 
   button {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     background-color: #13384f;
     color: #fff;
-    border: none;
+    font-weight: bold;
+    border: 2px solid white;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;

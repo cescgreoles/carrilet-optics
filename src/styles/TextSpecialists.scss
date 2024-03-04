@@ -1,0 +1,25 @@
+$base-color: #13384f;
+$soft-blue-2: lighten($base-color, 72%);
+$soft-blue-3: lighten($base-color, 10%);
+
+.image-gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-gallery-specialists {
+  color: #13384f;
+  font-weight: bold;
+  padding: 60px;
+  text-align: justify;
+}
+
+.image-gallery-title {
+  text-align: center;
+  opacity: 0.9;
+  color: #13384f;
+  margin: 0;
+  padding: 30px;
+}

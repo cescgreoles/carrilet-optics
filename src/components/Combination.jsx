@@ -11,7 +11,7 @@ import police from "../assets/police.png";
 const Combination = () => {
   return (
     <div>
-      <h3>Algunas de nuestras marcas</h3>
+      <h3 className="h3-cc">Algunas de nuestras marcas</h3>
       <div className="combo">
         <img src={logoPrada} alt="imagen1" className="imagen-1"></img>
         <img src={EA} alt="imagen1" className="imagen-1"></img>

@@ -21,20 +21,20 @@ const style = {
 
 const modalContent = [
   {
-    title: "Modal 1",
-    description: "Contenido del modal 1",
+    title: "Lentillas",
+    description: "Contingut per les lentilles, descomptes etc...",
   },
   {
-    title: "Modal 2",
-    description: "Contenido del modal 2",
+    title: "Baja Visión",
+    description: "Contingut per la baja visión, descomptes etc...",
   },
   {
-    title: "Modal 3",
-    description: "Contenido del modal 3",
+    title: "Audifonos",
+    description: "Contingut pels audifòns, descomptes etc...",
   },
   {
-    title: "Modal 4",
-    description: "Contenido del modal 4",
+    title: "Gafas",
+    description: "Contingut per les ulleres, descomptes etc...",
   },
 ];
 
