@@ -3,14 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/ThreeImage.scss";
-import Glasses1 from "../assets/carousel1.jpeg";
-import Glasses2 from "../assets/carousel2.jpeg";
-import Glasses3 from "../assets/carousel3.jpeg";
-import Glasses4 from "../assets/carousel4.jpeg";
-import Glasses5 from "../assets/carousel5.jpeg";
-import Glasses6 from "../assets/carousel6.jpeg";
-import Glasses7 from "../assets/carousel7.jpeg";
-import Glasses8 from "../assets/carousel8.jpeg";
+import Glasses1 from "../assets/carousel1.webp";
+import Glasses2 from "../assets/carousel2.webp";
+import Glasses3 from "../assets/carousel3.webp";
+import Glasses4 from "../assets/carousel4.webp";
+import Glasses5 from "../assets/carousel5.webp";
+import Glasses6 from "../assets/carousel6.webp";
+import Glasses7 from "../assets/carousel7.webp";
+import Glasses8 from "../assets/carousel8.webp";
 
 const ThreeImage = () => {
   const imageNames = [

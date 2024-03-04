@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/Combination.scss";
-import logoPrada from "../assets/logoPrada.jpeg";
-import EA from "../assets/emporioArmani.jpeg";
-import CH from "../assets/CH.png";
-import logoTous from "../assets/logoTous.jpeg";
-import logoRayBan from "../assets/rayBan.jpeg";
+import logoPrada from "../assets/logoPrada.webp";
+import EA from "../assets/emporioArmani.webp";
+import CH from "../assets/CH.webp";
+import logoTous from "../assets/logoTous.webp";
+import logoRayBan from "../assets/rayBan.webp";
 
-import police from "../assets/police.png";
+import police from "../assets/police.webp";
 
 const Combination = () => {
   return (

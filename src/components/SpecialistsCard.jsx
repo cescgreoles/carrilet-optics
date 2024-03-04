@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/SpecialistsCard.scss";
 import doctor1 from "../assets/doctor1.webp";
-import doctor2 from "../assets/doctor2.jpeg";
+import doctor2 from "../assets/doctor2.webp";
 
 const SpecialistCard = ({ name, age, license, specialties, image }) => {
   return (

@@ -1,15 +1,12 @@
 .section {
   display: flex;
   margin: 25px;
-  margin-top: none;
-  margin-bottom: none;
   background-color: #ffffff;
   text-align: justify;
-  border: #13384f 2px solid;
+  border: 1px solid #13384f; /* Añadido borde alrededor de cada sección */
   align-items: stretch; /* Asegura que todas las secciones tengan la misma altura */
   box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.1);
   color: #13384f;
-  height: auto; /* Establece una altura fija para todas las secciones */
 }
 
 .content {
@@ -20,8 +17,7 @@
 .text-wrapper {
   width: 60%;
   padding: 25px;
-  text-align: center;
-  text-justify: auto;
+  text-align: justify; /* Cambiado a "justify" para justificar el texto */
 }
 
 .image-wrapper {
@@ -37,6 +33,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
 }
 
 .button-mostrar-mas {
@@ -53,20 +50,19 @@
 
   .text-wrapper {
     width: 100%;
-    text-align: center;
+    padding: 15px; /* Reducir el padding en dispositivos móviles */
   }
 
   .image-wrapper {
     width: 100%;
-    height: 0;
-    padding-top: 100%;
+    height: 200px; /* Altura fija para la imagen en dispositivos móviles */
+    padding-top: 0; /* Eliminar el padding top */
   }
 
   .section-image {
-    position: absolute;
+    position: relative; /* Cambiar a posición relativa en dispositivos móviles */
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
   }
 }

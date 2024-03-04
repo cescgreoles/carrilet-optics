@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/BajaVision.scss";
-import glasses1 from "../../assets/glasses1.png";
+import glasses1 from "../../assets/glasses1.webp";
 
 const SectionWithImage = ({
   title,
@@ -17,13 +17,7 @@ const SectionWithImage = ({
         <div className="text-wrapper">
           <h2>{title}</h2>
           <p className="text">{text}</p>
-          {expanded && <p className="expanded-text">{textAdicional}</p>}
-          <button
-            className="button-mostrar-mas"
-            onClick={() => handleExpand(sectionClass)}
-          >
-            {expanded ? "Menos información" : "Más información"}
-          </button>
+          <p className="expanded-text">{textAdicional}</p>
         </div>
         <div className="image-wrapper">
           <img
@@ -59,7 +53,7 @@ const BajaVision = () => {
         expanded={expandedSections.includes("section-1")}
         handleExpand={handleExpand}
         imageSrc={glasses1}
-        textAdicional="hooola"
+        textAdicional=""
       />
 
       <SectionWithImage

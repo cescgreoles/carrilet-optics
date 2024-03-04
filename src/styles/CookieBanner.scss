@@ -1,0 +1,44 @@
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.cookie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cookie-text {
+  margin: 0;
+  max-width: 70%;
+  line-height: 1.4;
+}
+
+.cookie-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accept {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+}
+
+.reject {
+  background-color: #f44336;
+  border: none;
+  color: white;
+}
+
+.cookie-button:hover {
+  opacity: 0.8;
+}
