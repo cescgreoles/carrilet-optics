@@ -80,12 +80,7 @@
     margin-bottom: 10px; /* Agregar margen inferior a cada botón en dispositivos móviles */
   }
 
-  .MuiPaper-root {
-    width: calc(50% - 20px);
-    margin: 10px;
-  }
-
   .custom-modal {
-    width: 250px;
+    max-width: 250px;
   }
 }
