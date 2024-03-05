@@ -13,10 +13,8 @@ const SectionWithImage = ({
   title,
   text,
   sectionClass,
-  expanded,
   handleExpand,
   imageSrc,
-  textAdicional,
 }) => {
   return (
     <div className={`section ${sectionClass}`}>
@@ -24,7 +22,6 @@ const SectionWithImage = ({
         <div className="text-wrapper">
           <h2>{title}</h2>
           <p className="text">{text}</p>
-          <p className="expanded-text">{textAdicional}</p>
         </div>
         <div className="image-wrapper">
           <img
