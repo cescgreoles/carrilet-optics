@@ -13,7 +13,7 @@ const CookieBanner = () => {
 
   const rejectCookies = () => {
     localStorage.removeItem("cookiesAccepted");
-    setAccepted(false);
+    setAccepted(true);
   };
 
   if (accepted) {
