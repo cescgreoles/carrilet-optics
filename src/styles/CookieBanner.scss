@@ -3,9 +3,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  padding: 6px;
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
 }
 
@@ -22,19 +22,19 @@
 }
 
 .cookie-button {
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .accept {
-  background-color: #4caf50;
+  background-color: grey;
   border: none;
   color: white;
 }
 
 .reject {
-  background-color: #f44336;
+  background-color: grey;
   border: none;
   color: white;
 }
