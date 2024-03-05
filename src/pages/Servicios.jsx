@@ -4,6 +4,8 @@ import NavigationInformation from "../components/NavigationInformation";
 import NavigationBar from "../components/NavigationBar";
 import ServiciosOne from "../components/ServiciosOne";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
+import BannerPublicitario from "../components/BannerPublicitario";
 
 const Servicios = () => {
   return (
@@ -22,6 +24,8 @@ const Servicios = () => {
       </div>
 
       <ContactForm />
+      <Footer />
+      <BannerPublicitario />
     </div>
   );
 };

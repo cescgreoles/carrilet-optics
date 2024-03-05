@@ -48,11 +48,26 @@
   background-image: url("../assets/4.webp");
 }
 
-.parent-modal-title {
+.custom-modal {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 20px;
+  width: 90%; // Ancho del modal personalizado en porcentaje
+  max-width: 550px; // Ancho máximo del modal personalizado
+  height: auto; // Altura del modal personalizado
+}
+
+.custom-close-icon {
   color: white;
 }
 
-.parent-modal-description {
+.custom-modal-title {
+  font-size: 20px;
+  color: white;
+}
+
+.custom-modal-description {
+  font-size: 13px;
   color: white;
 }
 
@@ -70,8 +85,7 @@
     margin: 10px;
   }
 
-  .parent-modal-title,
-  .parent-modal-description {
-    margin: 0 10px;
+  .custom-modal {
+    width: 250px;
   }
 }

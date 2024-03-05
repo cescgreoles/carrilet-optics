@@ -5,7 +5,6 @@ import EA from "../assets/emporioArmani.webp";
 import CH from "../assets/CH.webp";
 import logoTous from "../assets/logoTous.webp";
 import logoRayBan from "../assets/rayBan.webp";
-
 import police from "../assets/police.webp";
 
 const Combination = () => {

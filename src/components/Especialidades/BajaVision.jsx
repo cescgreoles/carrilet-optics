@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "../../styles/BajaVision.scss";
-import glasses1 from "../../assets/glasses1.webp";
+import Photo1 from "../../assets/bajaVision-Specialists.webp";
+import Photo2 from "../../assets/diagnostico.webp";
+import Photo3 from "../../assets/adaptacion.webp";
+import Photo4 from "../../assets/vision.webp";
+import Photo5 from "../../assets/carousel4.webp";
+import Photo6 from "../../assets/glasses1.webp";
+import Photo7 from "../../assets/audifonos-2.webp";
+import Photo8 from "../../assets/audifonos-1.webp";
 
 const SectionWithImage = ({
   title,
@@ -48,75 +55,75 @@ const BajaVision = () => {
     <div className="baja-vision-container">
       <SectionWithImage
         title="Baja Visión"
-        text="La baja visión se refiere a una disminución significativa de la capacidad visual que no puede ser corregida completamente con gafas, lentes de contacto ni mediante tratamientos médicos, farmacológicos o quirúrgicos."
+        text="Ofrecemos un tratamiento especializado para aquellos con deterioro visual significativo, asegurando una atención integral y personalizada para mejorar la calidad de vida de nuestros pacientes mediante opciones de manejo visual adaptadas a sus necesidades específicas."
         sectionClass="section-1"
         expanded={expandedSections.includes("section-1")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
+        imageSrc={Photo1}
         textAdicional=""
       />
 
       <SectionWithImage
         title="Diagnóstico y tratamiento del déficit visual"
-        text="La valoración de la pérdida de función visual es esencial para determinar el diagnóstico, pronóstico y duración del tratamiento en pacientes de cualquier grupo de edad. También proporcionamos el servicio gratuito de consulta con un médico oftalmólogo para una evaluación más completa."
+        text="Nuestro equipo médico altamente calificado realiza evaluaciones exhaustivas para identificar y abordar eficazmente cualquier problema visual, garantizando un cuidado integral que incluye diagnóstico preciso y planes de tratamiento individualizados para cada paciente."
         sectionClass="section-2"
         expanded={expandedSections.includes("section-2")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
-        textAdicional="Nuestros especialistas del Hospital de Bellvitge se asegurarán de que usted reciba el tratamiento adecuado para mejorar al máximo su pérdida visual"
+        imageSrc={Photo2}
       />
 
       <SectionWithImage
         title="Glaucoma (Toma de la tensión ocular)"
-        text="Examen a partir de registros de la tensión ocular mediante el cual prevenimos y detectamos de manera precoz el glaucoma."
+        text="Implementamos medidas proactivas para prevenir y detectar el glaucoma en sus etapas iniciales, realizando exámenes especializados que permiten identificar posibles riesgos y ofreciendo opciones de tratamiento para preservar la salud visual a largo plazo."
         sectionClass="section-3"
         expanded={expandedSections.includes("section-3")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
+        imageSrc={Photo3}
       />
 
       <SectionWithImage
         title="Cataratas"
-        text="Examen a partir de registros de la tensión ocular mediante el cual prevenimos y detectamos de manera precoz el glaucoma."
+        text="Nuestro enfoque preventivo y detección precoz de las cataratas garantiza una intervención temprana para mantener la claridad visual y mejorar la calidad de vida de nuestros pacientes, mediante evaluaciones regulares y opciones de tratamiento efectivas."
         sectionClass="section-4"
         expanded={expandedSections.includes("section-4")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
+        imageSrc={Photo4}
       />
 
       <SectionWithImage
         title="Adaptación de gafas y lentes de contacto"
-        text="La adaptación de gafas de sol, gafas graduadas y lentes de contacto es el resultado final de la atención visual primaria, que se enfoca en satisfacer las necesidades del paciente. Considerando las características y necesidades personales de cada paciente, proporcionamos un asesoramiento de primera clase en la selección de monturas y tipos de lentes, en su toma de medidas, entrega, ajustes y adaptaciones según sea necesario; así como en el seguimiento posterior."
+        text="Nuestros especialistas proporcionan una adaptación personalizada de gafas y lentes, teniendo en cuenta las necesidades individuales de cada paciente para garantizar una visión óptima y confort visual, con asesoramiento experto en selección y ajuste de monturas y lentes."
         sectionClass="section-5"
         expanded={expandedSections.includes("section-5")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
+        imageSrc={Photo5}
       />
 
       <SectionWithImage
         title="Lentes especiales para Queratocono y astigmatismo irregular"
-        text="Descripción de las lentes especiales para Queratocono y astigmatismo irregular."
+        text="Ofrecemos lentes especializadas diseñadas para abordar problemas corneales como el queratocono y el astigmatismo irregular, brindando soluciones visuales personalizadas que mejoran la calidad de vida de nuestros pacientes con condiciones corneales específicas."
         sectionClass="section-6"
         expanded={expandedSections.includes("section-6")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
+        imageSrc={Photo6}
       />
 
       <SectionWithImage
         title="Diagnóstico de pérdida auditiva"
+        text="Nuestro equipo de especialistas realiza evaluaciones auditivas completas para diagnosticar y evaluar la pérdida auditiva, utilizando tecnología avanzada y experiencia clínica para proporcionar diagnósticos precisos y recomendaciones de manejo auditivo adaptadas a las necesidades individuales de cada paciente."
         sectionClass="section-7"
         expanded={expandedSections.includes("section-7")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
+        imageSrc={Photo7}
       />
 
       <SectionWithImage
         title="Audioprótesis"
-        text="Nuestro equipo también cuenta con audioprotesistas titulados para brindar asesoramiento y realizar la adaptación de audífonos. Además contamos con una variedad de productos, incluyendo tapones de baño hechos a medida, tapones para la protección del ruido, bandas acuáticas, y otros elementos esenciales para el cuidado de la salud auditiva. Somos distribuidores oficiales OTICON."
+        text="Contamos con audioprotesistas titulados que ofrecen asesoramiento experto y adaptación de audífonos personalizados, brindando soluciones auditivas efectivas que mejoran la calidad de vida de nuestros pacientes, junto con una variedad de productos para el cuidado auditivo y la protección del oído."
         sectionClass="section-8"
         expanded={expandedSections.includes("section-8")}
         handleExpand={handleExpand}
-        imageSrc={glasses1}
+        imageSrc={Photo8}
       />
     </div>
   );

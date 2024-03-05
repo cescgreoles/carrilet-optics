@@ -3,6 +3,8 @@ import "../styles/BajaVision.scss";
 import NavigationInformation from "../components/NavigationInformation";
 import NavigationBar from "../components/NavigationBar";
 import BajaVision from "../components/Especialidades/BajaVision";
+import Footer from "../components/Footer";
+import BannerPublicitario from "../components/BannerPublicitario";
 
 const Especialidades = () => {
   return (
@@ -11,7 +13,9 @@ const Especialidades = () => {
       <NavigationBar />
       <div className="specialists">
         <BajaVision />
-      </div>{" "}
+      </div>
+      <Footer />
+      <BannerPublicitario />
     </div>
   );
 };

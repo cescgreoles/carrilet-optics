@@ -3,6 +3,8 @@ import "../styles/ContactPage.scss";
 import NavigationBar from "../components/NavigationBar";
 import NavigationInformation from "../components/NavigationInformation";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
+import BannerPublicitario from "../components/BannerPublicitario";
 
 const ContactPage = () => {
   return (
@@ -20,6 +22,8 @@ const ContactPage = () => {
       </div>
 
       <ContactForm />
+      <Footer />
+      <BannerPublicitario />
     </div>
   );
 };

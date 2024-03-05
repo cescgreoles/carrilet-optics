@@ -6,6 +6,8 @@ import NavigationBar from "../components/NavigationBar";
 import ThreeImage from "../components/ThreeImage";
 import TextSpecialists from "../components/TextSpecialists";
 import SpecialtiesSection from "../components/SpecialistsCard";
+import Footer from "../components/Footer";
+import BannerPublicitario from "../components/BannerPublicitario";
 
 const LaOptica = () => {
   return (
@@ -16,6 +18,8 @@ const LaOptica = () => {
       <ThreeImage />
       <TextSpecialists />
       <SpecialtiesSection />
+      <Footer />
+      <BannerPublicitario />
     </div>
   );
 };

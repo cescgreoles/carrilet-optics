@@ -49,7 +49,7 @@ const ThreeImage = () => {
           <img
             src={imageName}
             alt={`Imagen ${index + 1}`}
-            className="carousel-image"
+            className="imagen-1"
           />
         </div>
       ))}
