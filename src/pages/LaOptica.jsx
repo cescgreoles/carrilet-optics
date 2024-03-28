@@ -16,8 +16,6 @@ const LaOptica = () => {
       <NavigationBar />
       <QuienSomos />
       <ThreeImage />
-      <TextSpecialists />
-      <SpecialtiesSection />
       <Footer />
       <BannerPublicitario />
     </div>
